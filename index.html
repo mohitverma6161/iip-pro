@@ -19,6 +19,44 @@
 		background: linear-gradient(to right, #29323c, #485563);
 		max-height: 100%;
 	}
+	.button {
+			  display: inline-block;
+			  border-radius: 4px;
+			  background-color: #f4511e;
+			  border: none;
+			  color: #FFFFFF;
+			  text-align: center;
+			  font-size: 28px;
+			  /*padding: 20px;*/
+			  width: 240px;
+			  transition: all 0.5s;
+			  cursor: pointer;
+			  margin: 5px;
+			}
+			.button span {
+			  cursor: pointer;
+			  display: inline-block;
+			  position: relative;
+			  transition: 0.5s;
+			}
+			.button span:after {
+			  content: '\00bb';
+			  position: absolute;
+			  opacity: 0;
+			  top: 0;
+			  right: -10px;
+			  transition: 0.5s;
+			}
+			.button:hover span {
+			  padding-right: 10px;
+			}
+			.button:hover span:after {
+			  opacity: 1;
+			  right: 0;
+			}
+			* {
+				font-style: sans-serif, Lato;
+			}
 </style>
 
 
@@ -30,12 +68,19 @@
 	
 	<div class="row">
 		
-		<header>
+		<header style="position: fixed;">
 			<img style="height: 70px;width: 20vw;margin-top: 2px;margin-left: 4px" src="bd3.png">
 		</header>
+		<div style="color: white;width: 400px;height: 400px;margin-top: 10%;margin-left: 60%" class="animated bounce">
+			<p style="text-align: justify;text-justify: inter-word;">
+				This is to certify that the project work entitled “BRAIN DRAIN” that is being submitted for the subject INTRODUCTION TO INNOVATIVE PROJECTS (PHY1999) is a record of bonfire work done under my supervision. The contents of this Project work, in full or in parts, have neither been taken from any other source nor have been submitted for any other.
 
+			</p>
+		    <button class="publishbtn button animated wobble" id="pb" style="vertical-align:middle"><a href="https://docs.google.com/forms/d/e/1FAIpQLScVahUcKEnZF6Lh7Q3SXfr_DsM5RSdhn4nuHapyZ-MlCw-8vA/viewform"><span>Know more&nbsp;&nbsp;&nbsp;</span></a></button>
+
+		</div>
 		<footer>
-			<img style="height: 300px;width: 100%;margin-top: 21.5%" src="bd1.png">
+			<img style="height: 300px;width: 100%;margin-top:-10% " src="bd1.png">
 		</footer>
 	</div>
 
